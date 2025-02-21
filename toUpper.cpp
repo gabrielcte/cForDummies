@@ -21,5 +21,24 @@ int main (int nNumberofArgs, char* pszArgs[])
 	// Pronpt user
 	cout << "This program accpets a string \n"
 		 << "from the keyboard and echoes the \n"
+		 << "string in all caps. \n" << endl;
+	
+	// input two strings
+	cout << "Enter string: ";
+	char szString[256];
+	cin.getline(szString, 256);
+
+	// now convert the string to all uppercase
+	toUpper(szString, 256);
+
+	// and display the result
+	cout << "All caps version: <"
+	<< szString
+	<< ">" << endl;
+
+	// wait until is ready before terminating program
+	// to allow the user to see the program results
+	system("Pause");
+	return 0;
 		 
 }
